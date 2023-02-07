@@ -7,3 +7,21 @@
 """ ke = 8.98 * 10**9 """
 
 #### FIRST: WE NEED A CALCULATOR FOR COILOMBS LAW ####
+import numpy as np
+class CoulombLaw:
+    def __init__(self,
+                 q1,
+                 q2,
+                 r,
+                 k = 9e9,
+                 ):
+        self.q1 = q1
+        self.q2 = q2
+        self.r = r
+        self.k = k
+        
+    def calculate_coulomb_law(self):
+        print(abs(self.q1 * self.q2) * self.k / self.r**2)
+
+particle = CoulombLaw(+5e-3, -1e-1, 0.5)
+particle.calculate_coulomb_law()
