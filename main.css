@@ -1,0 +1,8 @@
+.test {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    padding: 50px;
+    border: 50px solid red;
+    margin: 50px;
+}

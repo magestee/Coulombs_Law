@@ -22,6 +22,7 @@ class CoulombLaw:
         
     def calculate_coulomb_law(self):
         print(abs(self.q1 * self.q2) * self.k / self.r**2)
+    
 
 particle = CoulombLaw(+5e-3, -1e-1, 0.5)
 particle.calculate_coulomb_law()
